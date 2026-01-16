@@ -212,7 +212,7 @@ export default function DashboardPage() {
     }
 
     const unsubscribe = onSnapshot(
-      collection(db, "pays"),
+      collection(db, "pays1"),
       (snapshot) => {
         const applicationsData = snapshot.docs.map((doc) => ({
           id: doc.id,
@@ -246,7 +246,7 @@ export default function DashboardPage() {
     if (!db) return;
     
     try {
-      await deleteDoc(doc(db, "pays", id));
+      await deleteDoc(doc(db, "pays1", id));
       toast({
         title: "تم الحذف",
         description: "تم حذف الطلب بنجاح",
@@ -265,7 +265,7 @@ export default function DashboardPage() {
     if (!db) return;
     
     try {
-      await updateDoc(doc(db, "pays", id), { status });
+      await updateDoc(doc(db, "pays1", id), { status });
       toast({
         title: "تم التحديث",
         description: "تم تحديث حالة الطلب بنجاح",

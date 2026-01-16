@@ -87,7 +87,6 @@ export default function LoginPage() {
               <User className="h-10 w-10 text-emerald-400" />
             </div>
           </div>
-md12@admin.com
 
           <Card className="relative overflow-hidden border-white/10 bg-gray-900/60 text-white shadow-2xl backdrop-blur-xl">
             {/* top accent bar */}
